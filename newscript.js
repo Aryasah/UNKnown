@@ -344,12 +344,13 @@ function createTweenScrubber(tween, seekSpeed) {
     if (mouseDown === true) {
       var cx = e.clientX;
       var dx = cx - _cx;
+
       _cx = cx;
 
       seek(dx);
     }
   });
-  // mobile
+  /*mobile*/
   // window.addEventListener('touchstart', function(e) {
   //   _cx = e.touches[0].clientX;
   //   stop();
